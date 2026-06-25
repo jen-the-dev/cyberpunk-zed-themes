@@ -3,6 +3,11 @@ Sites/zed-themes/README.md#L1-260
 
 A git-backed collection of Zed editor themes with an automated installer, updater, and optional quarterly auto-update for macOS (launchd). I created tooling so you — or any Zed user — can install, update, and maintain the theme set safely and reproducibly.
 
+## ANZSCO 261312 Skills Snapshot
+- Automation of developer-experience tooling with script-driven installation/update.
+- Release and validation workflow design for reliable theme distribution.
+- Operational documentation that supports reproducible setup at scale.
+
 This repository includes:
 - `themes/` — your curated themes (imported from your current `~/.config/zed/themes`)
 - `previews/` — optional screenshots for each theme
@@ -129,6 +134,8 @@ If you want, I can now:
 - optionally enable the launchd plist for quarterly auto-updates.
 
 Tell me which of those you want me to do next.
+
+
 
 
 ## Problem
