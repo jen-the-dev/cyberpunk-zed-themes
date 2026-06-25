@@ -129,3 +129,53 @@ If you want, I can now:
 - optionally enable the launchd plist for quarterly auto-updates.
 
 Tell me which of those you want me to do next.
+
+
+## Problem
+Developers need a reproducible way to install, update, and validate custom editor themes at scale.
+
+## Solution
+A curated Zed theme collection with installer/update scripts, validation automation, and optional scheduled updates.
+
+## Architecture Diagram
+```mermaid
+flowchart LR
+  Themes["Theme JSON files"] --> Validate["Validation script + CI"]
+  Validate --> Install["install.sh / update.sh"]
+  Install --> Zed["Zed editor"]
+```
+
+## Tech Stack
+- Shell scripting
+- Python validation tooling
+- GitHub Actions
+- JSON theme assets
+
+## Setup Instructions
+```bash
+git clone https://github.com/jen-the-dev/cyberpunk-zed-themes.git
+cd cyberpunk-zed-themes
+./install.sh
+```
+
+## Testing
+- python3 scripts/validate_theme.py themes
+- Run CI validation workflow on PRs
+
+## ANZSCO 261312 Competency Evidence
+- Tooling automation and release workflows.
+- Configuration/package lifecycle management.
+- Developer-experience engineering through reproducible setup.
+
+## Commit Convention
+Use Conventional Commits for presentation clarity:
+- `feat(scope): add new user-facing capability`
+- `fix(scope): resolve functional defect`
+- `test(scope): add or improve automated tests`
+- `docs(readme): improve project documentation`
+
+## Evidence Map
+- `themes/`
+- `scripts/validate_theme.py`
+- `install.sh`
+- `.github/workflows/`
