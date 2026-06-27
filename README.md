@@ -3,10 +3,10 @@ Sites/zed-themes/README.md#L1-260
 
 A git-backed collection of Zed editor themes with an automated installer, updater, and optional quarterly auto-update for macOS (launchd). I created tooling so you — or any Zed user — can install, update, and maintain the theme set safely and reproducibly.
 
-## ANZSCO 261312 Skills Snapshot
-- Automation of developer-experience tooling with script-driven installation/update.
-- Release and validation workflow design for reliable theme distribution.
-- Operational documentation that supports reproducible setup at scale.
+## ANZSCO 261211 + 261312 Skills Snapshot
+- Theme-system visual customization and design-packaging delivery for editor UX (261211).
+- Automation of developer-experience tooling with script-driven installation/update (261312).
+- Release and validation workflow design for reliable theme distribution (261312).
 
 This repository includes:
 - `themes/` — your curated themes (imported from your current `~/.config/zed/themes`)
@@ -169,10 +169,10 @@ cd cyberpunk-zed-themes
 - python3 scripts/validate_theme.py themes
 - Run CI validation workflow on PRs
 
-## ANZSCO 261312 Competency Evidence
-- Tooling automation and release workflows.
-- Configuration/package lifecycle management.
-- Developer-experience engineering through reproducible setup.
+## ANZSCO 261211 + 261312 Competency Evidence
+- **261211 (Multimedia Specialist)**: visual theming systems and presentation-focused asset curation.
+- **261312 (Developer Programmer)**: tooling automation, release workflows, and reproducible setup engineering.
+- Configuration/package lifecycle management across theme assets and install scripts.
 
 ## Commit Convention
 Use Conventional Commits for presentation clarity:
